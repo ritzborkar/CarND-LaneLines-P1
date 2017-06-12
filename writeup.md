@@ -12,7 +12,7 @@ The input road images looked like shown below:
 
 The intent of the pipeline is to detect and draw lane lines on the above image as shown below:
 
-<img src="test_images_output/solidWhiteCurve.jpg" width="480" alt="Output Image" />
+<img src="https://github.com/ritzborkar/CarND-LaneLines-P1/master/test_images_output/solidWhiteCurve.jpg" width="480" alt="Output Image" />
 
 
 The following steps were taken by the pipeline:
