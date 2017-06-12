@@ -12,7 +12,7 @@ The input road images looked like shown below:
 
 The intent of the pipeline is to detect and draw lane lines on the above image as shown below:
 
-<img src="https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images_output/solidWhiteCurve.jpg.png" width="480" alt="Output Image" />
+<img src="test_images_output/solidWhiteCurve.jpg" width="480" alt="Output Image" />
 
 
 The following steps were taken by the pipeline:
@@ -33,7 +33,7 @@ vertices = np.array([[(int(img.shape[1]*0.16),img.shape[0]), \
 
 The above polygon is printed on the image below:
 
-<img src="test_images_output/Roi.jpg" width="480" alt="ROI Image" />
+<img src="test_images_output/Roi.png" width="480" alt="ROI Image" />
 
 #### e. Pipe Stage 5: Detection of Line Segments 
 The next step is to detect line segments from the edges present in the region of interest. Hough Transform is used to detect the end points of various line segments present in the trapezoidal area which form the lanes.
