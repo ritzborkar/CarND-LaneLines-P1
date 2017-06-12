@@ -2,18 +2,19 @@
 
 This project builds a computer vision pipeline to detect lane lines on roads.
 The pipeline is then tested on images and video clips.
+---
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-[image2]: ./test_images/solidWhiteCurve.jpg "solidWhiteCurve"
-[image3]: ./test_images_output/solidWhiteCurve.jpg "solidWhiteCurve_o"
-[image4]: ./test_images_output/Roi.jpg "Roi"
-[image5]: ./test_images_output/solidWhiteRight.jpg "solidWhiteRight_o"
-[image6]: ./test_images_output/solidYellowCurve.jpg "solidYellowCurve_o"
-[image7]: ./test_images_output/solidYellowCurve2.jpg "solidYellowCurve2_o"
-[image8]: ./test_images_output/solidYellowLeft.jpg "solidYellowLeft_o"
-[image9]: ./test_images_output/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch_o"
+[image2]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images/solidWhiteCurve.jpg
+[image3]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidWhiteCurve.jpg
+[image4]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/Roi.jpg
+[image5]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidWhiteRight.jpg
+[image6]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidYellowCurve.jpg
+[image7]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidYellowCurve2.jpg "solidYellowCurve2_o"
+[image8]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidYellowLeft.jpg "solidYellowLeft_o"
+[image9]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch_o"
+
 ---
 
 ### Reflection
@@ -78,6 +79,7 @@ x1l = int((y1-cl)/ml)
  The lines drawn above were then overlaid on the initial road image with weighted bit-wise AND  for partial transparency of lines to show the actual lane lines below.
  
  This yielded the final image outputs as below:
+ 
  ![alt text][image5]
  
  ![alt text][image6]
