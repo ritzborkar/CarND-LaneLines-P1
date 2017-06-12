@@ -2,10 +2,6 @@
 
 This project builds a computer vision pipeline to detect lane lines on roads.
 The pipeline is then tested on images and video clips.
----
-
-
----
 
 ### Reflection
 
@@ -16,7 +12,8 @@ The input road images looked like shown below:
 
 The intent of the pipeline is to detect and draw lane lines on the above image as shown below:
 
-<img src="test_images_output/solidWhiteCurve.jpg" width="480" alt="Output Image" />
+<img src="test_images/solidWhiteCurve.jpg" width="480" alt="Output Image" />
+
 
 The following steps were taken by the pipeline:
 
