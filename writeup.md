@@ -18,7 +18,7 @@ The pipeline is then tested on images and video clips.
 ### 1. Image Processing Pipeline.
 The input road images looked like shown below:
 
-![alt text](https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images/solidWhiteCurve.jpg "SolidWhiteCurve")
+![alt text](https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images/solidWhiteCurve.jpg)
 
 The intent of the pipeline is to detect and draw lane lines on the above image as shown below:
 
