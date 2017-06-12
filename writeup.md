@@ -3,29 +3,17 @@
 This project builds a computer vision pipeline to detect lane lines on roads.
 The pipeline is then tested on images and video clips.
 
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-[image2]: ./test_images/solidWhiteCurve.jpg "solidWhiteCurve"
-[image3]: ./test_images_output/solidWhiteCurve.jpg "solidWhiteCurve_o"
-[image4]: ./test_images_output/Roi.jpg "Roi"
-[image5]: ./test_images_output/solidWhiteRight.jpg "solidWhiteRight_o"
-[image6]: ./test_images_output/solidYellowCurve.jpg "solidYellowCurve_o"
-[image7]: ./test_images_output/solidYellowCurve2.jpg "solidYellowCurve2_o"
-[image8]: ./test_images_output/solidYellowLeft.jpg "solidYellowLeft_o"
-[image9]: ./test_images_output/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch_o"
----
-
 ### Reflection
 
 ### 1. Image Processing Pipeline.
 The input road images looked like shown below:
 
-![alt text][image2]
+<img src="test_images/solidWhiteCurve.jpg" width="480" alt="Input Image" />
 
 The intent of the pipeline is to detect and draw lane lines on the above image as shown below:
 
-![alt text][image3]
+<img src="https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images_output/solidWhiteCurve.jpg.png" width="480" alt="Output Image" />
+
 
 The following steps were taken by the pipeline:
 
@@ -45,7 +33,7 @@ vertices = np.array([[(int(img.shape[1]*0.16),img.shape[0]), \
 
 The above polygon is printed on the image below:
 
-![alt text][image4]
+<img src="test_images_output/Roi.jpg" width="480" alt="ROI Image" />
 
 #### e. Pipe Stage 5: Detection of Line Segments 
 The next step is to detect line segments from the edges present in the region of interest. Hough Transform is used to detect the end points of various line segments present in the trapezoidal area which form the lanes.
@@ -78,15 +66,16 @@ x1l = int((y1-cl)/ml)
  The lines drawn above were then overlaid on the initial road image with weighted bit-wise AND  for partial transparency of lines to show the actual lane lines below.
  
  This yielded the final image outputs as below:
- ![alt text][image5]
+
+ <img src="test_images_output/solidWhiteRight.jpg" width="480" alt="output right Image" />
  
- ![alt text][image6]
+ <img src="test_images_output/solidYellowCurve.jpg" width="480" alt="Yellow curve Image" />
  
- ![alt text][image7]
+ <img src="test_images_output/solidYellowCurve2.jpg" width="480" alt="Yellow curve 2 Image" />
  
- ![alt text][image8]
+ <img src="test_images_output/solidYellowLeft.jpg" width="480" alt="Yellow Left Image" />
  
- ![alt text][image9]
+ <img src="test_images_output/whiteCarLaneSwitch.jpg" width="480" alt="car lane Image" />
  
 
 ### 2. Shortcoming with the current pipeline
