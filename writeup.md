@@ -4,16 +4,12 @@ This project builds a computer vision pipeline to detect lane lines on roads.
 The pipeline is then tested on images and video clips.
 ---
 
-[//]: # (Image References)
 
-[image2]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images/solidWhiteCurve.jpg
-[image3]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidWhiteCurve.jpg
-[image4]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/Roi.jpg
-[image5]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidWhiteRight.jpg
-[image6]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidYellowCurve.jpg
-[image7]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidYellowCurve2.jpg "solidYellowCurve2_o"
-[image8]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/solidYellowLeft.jpg "solidYellowLeft_o"
-[image9]: https://github.com/ritzborkar/CarND-LaneLines-P1.git/test_images_output/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch_o"
+[image5]: https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images_output/solidWhiteRight.jpg "swr"
+[image6]: https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images_output/solidYellowCurve.jpg "syc"
+[image7]: https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images_output/solidYellowCurve2.jpg "solidYellowCurve2_o"
+[image8]: https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images_output/solidYellowLeft.jpg "solidYellowLeft_o"
+[image9]: https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images_output/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch_o"
 
 ---
 
@@ -22,11 +18,11 @@ The pipeline is then tested on images and video clips.
 ### 1. Image Processing Pipeline.
 The input road images looked like shown below:
 
-![alt text][image2]
+![alt text](https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images/solidWhiteCurve.jpg "SolidWhiteCurve")
 
 The intent of the pipeline is to detect and draw lane lines on the above image as shown below:
 
-![alt text][image3]
+![alt text](https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images_output/solidWhiteCurve.jpg "solidWhiteCurve output")
 
 The following steps were taken by the pipeline:
 
@@ -46,7 +42,7 @@ vertices = np.array([[(int(img.shape[1]*0.16),img.shape[0]), \
 
 The above polygon is printed on the image below:
 
-![alt text][image4]
+![alt text](https://github.com/ritzborkar/CarND-LaneLines-P1/tree/master/test_images_output/Roi.jpg "Region of Interest")
 
 #### e. Pipe Stage 5: Detection of Line Segments 
 The next step is to detect line segments from the edges present in the region of interest. Hough Transform is used to detect the end points of various line segments present in the trapezoidal area which form the lanes.
